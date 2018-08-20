@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Places You've Been</title>
+   <link rel="stylesheet"     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/globe.jpg" alt="globe"  height="150" width="150">
+      <h1>Locations Book</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a location:</h2>
+          <form id="new-location">
+            <div class="form-group">
+              <label for="new-place">Name of Place</label>
+              <input type="text" class="form-control" id="new-place">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark">Landmarks Nearby</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-restaurant">Restaurants Nearby</label>
+              <input type="text" class="form-control" id="new-restaurant">
+            </div>
+            <div class="form-group">
+              <label for="new-people-visited">People Visited</label>
+              <input type="text" class="form-control" id="new-people-visited">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Places You've Been:</h2>
+          <ul id="allPlaces">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+            <p>Landmarks: <span class="landmarks"></span></p>
+            <p>Restaurants: <span class="restaurants"></span></p>
+            <p>Visited: <span class="visited"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
